@@ -1,1 +1,2 @@
-print('Hello')
+cast = ["Cleese", 'Palin', 'Jones', "Idle"]
+print(cast[1])
