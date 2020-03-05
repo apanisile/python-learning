@@ -80,10 +80,10 @@
   #  print("Drink plenty of water")
 #elif is_cold:
 #    print("It's a cold day")
-#    print("Wear warm clothes")    
+#    print("Wear warm clothes")
 #else:
 #    print("Its a lovely day")
-#    
+#
 #print("Enjoy your day")
 
 
@@ -244,7 +244,7 @@
 #-----------------------------------------------------------------------------------------------
 
 ##Nested Loops
-#The values in "y" would keep running for every instance of "x" 
+#The values in "y" would keep running for every instance of "x"
 #for x in range(4):
 ##    for y in range(3):
 ##        print(f'({x}, {y})')
@@ -281,4 +281,3 @@
  #       max = number
 #print(max)
 #-----------------------------------------------------------------------------------------------
-#2D Lists
