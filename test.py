@@ -1,3 +1,5 @@
+#This python material is the learning process
+
 #course = 'Python for Beginners'
 #print the length of the string
 #print(len(course))
@@ -281,3 +283,47 @@
  #       max = number
 #print(max)
 #-----------------------------------------------------------------------------------------------
+#2D Lists
+#[
+#    1 2 3
+#    4 5 6
+#    7 8 9
+#]
+#matrix = [
+#            [1,2,3],
+#            [4,5,6],
+#            [7,8,9]
+#]
+#matrix[0][1]  = 20
+#print(matrix[0][1])
+
+#for row in matrix:
+#    for item in row:
+#        print(item)
+
+#numbers = [5,2,1,7,4,5,6]
+#numbers.append(20)
+#numbers.insert(2, 10)
+#numbers.remove(4)
+#numbers.clear()
+#numbers.pop()
+#print(numbers.index(5))
+#print(numbers)
+#print(7 in numbers)
+#print(numbers.count(5))
+#numbers.sort()
+#numbers.reverse()
+#numbers2 = numbers.copy()
+#numbers.append(10)
+#print(numbers)
+#print(numbers2)
+
+
+##Execrise
+#print("Write a program to remove the duplicates in a list:")
+#numbers= [2,2,5,6,3,4,2,6]
+#no_dups = []
+#for number in numbers:
+#    if number not in no_dups:
+#        no_dups.append(number)
+#print(no_dups)
