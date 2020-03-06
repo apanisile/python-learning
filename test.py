@@ -259,8 +259,8 @@
 #    output = " "
 #    for count in range(item):
 #        output += 'x'
-#    print(output)
-
+##    print(output)
+#2D lista
 #-----------------------------------------------------------------------------------------------
 #nested for loops to print out "L"
 #numbers = [1,1,1,1,5]
@@ -327,3 +327,4 @@
 #    if number not in no_dups:
 #        no_dups.append(number)
 #print(no_dups)
+#-----------------------------------------------------------------------------------------------
