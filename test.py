@@ -328,3 +328,44 @@
 #        no_dups.append(number)
 #print(no_dups)
 #-----------------------------------------------------------------------------------------------
+#Tuples
+#Tuples cannot be changed
+#numbers = (1, 2, 3)
+#print(numbers[0])
+#-----------------------------------------------------------------------------------------------
+#Unpacking
+#coordinates = (1, 2, 3)
+#x = coordinates[0]
+#y = coordinates[1]
+#z = coordinates[2]
+
+#x,y,z = coordinates
+#print(z)
+#-----------------------------------------------------------------------------------------------
+#Dictionaries
+ #Dictionaries store key value pairs
+#ustomer = {
+#    "name": "John Smith",
+#    "age": 30,
+#    "is_veriified": True
+# }
+#print(customer.get("name"))
+#-----------------------------------------------------------------------------------------------
+#Exercise to display the spellig of numbers
+phone = input("Phone: ")
+digits = {
+    "1": "One",
+    "2": "Two",
+    "3": "Three",
+    "4": "Four",
+    "5": "Five",
+    "6": "Six",
+    "7": "seven",
+    "8": "Eight",
+    "9": "Nine",
+    "10": "Ten"
+}
+output = ""
+for ch in phone:
+    output += digits.get(ch, "!") + " "
+print(output)
