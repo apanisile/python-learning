@@ -19,7 +19,7 @@
 #print(course.replace('Beginners', 'Absolute Beginners'))
 #print('python' in course)
 
-#----------------------------------------------------------------------------------------------
+#------------------------------------------------------ ----------------------------------------
 
 #Arithmatic Operators
 #Divide
@@ -353,7 +353,7 @@
 #-----------------------------------------------------------------------------------------------
 #Exercise to display the spellig of numbers
 phone = input("Phone: ")
-digits = {
+digit_mapping = {
     "1": "One",
     "2": "Two",
     "3": "Three",
@@ -367,5 +367,5 @@ digits = {
 }
 output = ""
 for ch in phone:
-    output += digits.get(ch, "!") + " "
+    output += digit_mapping.get(ch, "!") + " "
 print(output)
