@@ -351,21 +351,67 @@
 # }
 #print(customer.get("name"))
 #-----------------------------------------------------------------------------------------------
-#Exercise to display the spellig of numbers
-phone = input("Phone: ")
-digit_mapping = {
-    "1": "One",
-    "2": "Two",
-    "3": "Three",
-    "4": "Four",
-    "5": "Five",
-    "6": "Six",
-    "7": "seven",
-    "8": "Eight",
-    "9": "Nine",
-    "10": "Ten"
-}
-output = ""
-for ch in phone:
-    output += digit_mapping.get(ch, "!") + " "
-print(output)
+#Exercise to display the spelling of numbers
+#phone = input("Phone: ")
+#digit_mapping = {
+#    "1": "One",
+#    "2": "Two",
+#    "3": "Three",
+#    "4": "Four",
+#    "5": "Five",
+#    "6": "Six",
+#    "7": "seven",
+#    "8": "Eight",
+#    "9": "Nine",
+#    "10": "Ten"
+#}
+#output = ""
+#for ch in phone:
+#    output += digit_mapping.get(ch, "!") + " "
+#print(output)
+#-----------------------------------------------------------------------------------------------
+#Emoji Converter
+#message = input(">")
+#words = message.split(' ')
+#emojis = {
+#  ":)": "😊"
+#  ":(": "😞"
+#}
+#output = ""
+#for word in words:
+#      output += emojis.get(word, word) + " "
+#print(output)
+#-----------------------------------------------------------------------------------------------
+#Functions
+#def greet_user(first_name, last_name):
+#    print(f'Hi {first_name} {last_name}!')
+#    print('Welcome aboard')
+
+
+#print("Start")
+#greet_user("John", "Smith")
+#greet_user("Mary", "Madgalene")
+# print("Finish")
+#-----------------------------------------------------------------------------------------------
+#Funvtions to return values
+#def square(number):
+#    print(number*number)
+#    return
+#print(square(3))
+#-----------------------------------------------------------------------------------------------
+#Creating a reusable Function
+def emoji_converter(message):
+    words = message.split(' ')
+    emojis = {
+      ":)": "😊"
+      ":(": "😞"
+    }
+    output = ""
+    for word in words:
+        output += emojis.get(word, word) + " "
+    return output
+
+
+message = input(">")
+emoji_converter(message)
+print(emoji_converter(message))
