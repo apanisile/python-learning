@@ -344,7 +344,7 @@
 #-----------------------------------------------------------------------------------------------
 #Dictionaries
  #Dictionaries store key value pairs
-#ustomer = {
+#customer = {
 #    "name": "John Smith",
 #    "age": 30,
 #    "is_veriified": True
@@ -393,19 +393,19 @@
 #greet_user("Mary", "Madgalene")
 # print("Finish")
 #-----------------------------------------------------------------------------------------------
-#Funvtions to return values
+#Funtions to return values
 #def square(number):
 #    print(number*number)
 #    return
 #print(square(3))
 #-----------------------------------------------------------------------------------------------
+'''
 #Creating a reusable Function
 def emoji_converter(message):
     words = message.split(' ')
     emojis = {
-      ":)" : "😊"
-      ":(" : "😞"
-    }
+      ":)": "😊",
+      ":(": "😞"}
     output = ""
     for word in words:
         output += emojis.get(word, word) + " "
@@ -415,3 +415,119 @@ def emoji_converter(message):
 message = input(">")
 emoji_converter(message)
 print(emoji_converter(message))
+'''
+#------------------------------------------------------------------------------------------------
+#Exceptions
+#try:
+#    age = int(input("Input your age: "))
+#    income = 20000
+#    risk = income / age
+#    print(age)
+#except ZeroDivisionError:
+#    print('Age cannot be zero')
+#except ValueError:
+#    print("Invalid Value")
+#------------------------------------------------------------------------------------------------
+#Classes
+'''
+class Point:
+    def move(self):
+        print("move")
+
+    def draw(self):
+        print("draw")
+
+point1 = Point()
+point1.x = 10
+point1.y = 20
+print(point1.x)
+point1.draw()
+'''
+#------------------------------------------------------------------------------------------------
+'''
+Time
+import time;
+
+ticks = time.time()
+print("Number of ticks since 12:00am, January 1, 1970: ", ticks)
+
+import calendar
+cal = calendar.month(2020, 2)
+print('Here is the calendar: ')
+print(cal)
+'''
+#------------------------------------------------------------------------------------------------
+'''
+class Person:
+    def __init__(self, name):
+        self.name = name
+
+    def talk(self):
+        print(f"Hi my name is: {self.name}")
+
+ifeoluwa = Person("Ifeoluwa")
+ifeoluwa.talk()
+
+lawal = Person("Lawal")
+lawal.talk()
+'''
+#------------------------------------------------------------------------------------------------
+'''
+class Mammal:
+    def walk(self):
+        print("walk")
+
+class Dog(Mammal):
+    def bark(self):
+        print("Bark")
+    pass
+
+class Cat(Mammal):
+    pass
+
+dog1 = Dog()
+dog1.bark()
+'''
+#------------------------------------------------------------------------------------------------
+'''
+import converter
+
+print(converter.kg_to_lbs(70))
+'''
+#------------------------------------------------------------------------------------------------
+'''
+#Class work
+#Write a program to find the largest number in a list
+from utils import find_max
+
+numbers = [0,7,8,11,9,3,56,88,100]
+maximum = find_max(numbers)
+print(maximum(numbers))
+'''
+#------------------------------------------------------------------------------------------------
+#Generating random values
+#import random 
+
+#for i in range(3):
+#    print(random.randint(10, 20))
+    
+#members = ['john', 'mary', 'ifeoluwa', 'Mosh']
+#leader = random.choice(members)
+#print(leader)
+#------------------------------------------------------------------------------------------------
+#Class work
+# Create a random dice app
+import random
+
+
+class Dice:
+    def roll(self):
+       first = random.randint(1, 6)
+       second = random.randint(1, 6)
+       return first, second
+
+
+dice = Dice()
+print(dice.roll())
+#------------------------------------------------------------------------------------------------
+#Files and Directiories
