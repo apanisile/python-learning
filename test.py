@@ -505,6 +505,7 @@ maximum = find_max(numbers)
 print(maximum(numbers))
 '''
 #------------------------------------------------------------------------------------------------
+'''
 #Generating random values
 #import random 
 
@@ -529,5 +530,16 @@ class Dice:
 
 dice = Dice()
 print(dice.roll())
+'''
 #------------------------------------------------------------------------------------------------
 #Files and Directiories
+from pathlib import Path
+
+path = Path("")
+# print(path.exists())
+# print(path.mkdir())
+# print(path.rmdir())
+#for file in path.glob('*'):
+#    print(file)
+#------------------------------------------------------------------------------------------------
+ 
