@@ -1,7 +1,22 @@
 #Python program to calculate loan
+def greet(fname, lname, msg="Good morning!"):
+    """
+    This function greets to
+    the person with the
+    provided message.
 
+    If the message is not provided,
+    it defaults to "Good
+    morning!"
+    """
+    print("Hello", fname + ' '+ lname + ', ' + msg)
+    
+    
 fname = input("Hi there! Please enter your first name: ")
 lname = input("Please enter your last name: ")
+
+greet (lname, fname)
+
 email = input("Enter your e-mail address: ")
 email2 = input("Enter your e-mail address again: ")
 
