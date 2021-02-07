@@ -14,7 +14,7 @@ def greet(fname, lname, msg="Good morning!"):
 def valid(x, y):
     
     if x != y:
-        print("the numbers are not the same")
+        print("The numbers entered are not the same")
         exit(1)
     else: 
         print("Accepted")
