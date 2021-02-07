@@ -11,13 +11,19 @@ def greet(fname, lname, msg="Good morning!"):
     """
     print("Hello", fname + ' '+ lname + ', ' + msg)
     
-def valid(x, y):
+def validate_numbers(x, y):
     
     if x != y:
         print("The numbers entered are not the same")
         exit(1)
     else: 
         print("Accepted")
+        
+def validate_email(x, y):
+    
+    if email != email1:
+        print("The email's dont match")
+    exit(1)
         
         
 fname = input("Hi there! Please enter your first name: ")
@@ -26,11 +32,8 @@ lname = input("Please enter your last name: ")
 greet (lname, fname)
 
 email = input("Enter your e-mail address: ")
-email2 = input("Enter your e-mail address again: ")
-
-if email != email2:
-    print("The email's dont match")
-    exit(1)
+email1 = input("Enter your e-mail address again: ")
+validate_email(email, email1)
 
 bank_credit = int(input("Please what is your bank credit score? "))
 
@@ -46,19 +49,21 @@ if bank_credit >= bench_mark :
     
     if payment_method == 1:
         
+        print("You have chosen the dircet deposit option")
+        
         bank_name = input("Enter bank name: ")
 
         routing_no = input("Enter your routing number: ")
         routing_no1 = input("Enter your routing number again: ")
-        valid(routing_no, routing_no1)
+        validate_numbers(routing_no, routing_no1)
         
         acct_no = input("Enter your account number: ")
         acct_no1 = input("Enter your account number again: ")
-        valid(acct_no, acct_no1)
+        validate_numbers(acct_no, acct_no1)
         
     elif payment_method == 2:
         print("You hae chosen the Wire Check option")
-        account_name = input("What name shoudl be written on the check?: ")
+        account_name = input("What name should be written on the check?: ")
         
     elif payment_method == 3:
         print("You have chosen the transfer option!")
