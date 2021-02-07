@@ -39,10 +39,10 @@ bench_mark = 10000
 if bank_credit >= bench_mark :
     print("Great! you qualify for a loan! ")
     print("What payment method would you prefer: ")
-    payment_method= input("""
+    payment_method= int(input("""
     1. Direct Deposit
     2. Wire Check
-    3. Transfer """)
+    3. Transfer """))
     
     if payment_method == 1:
         
