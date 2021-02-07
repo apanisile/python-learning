@@ -25,7 +25,7 @@ def name():
     fname = input("Hi there! Please enter your first name: ")
     lname = input("Please enter your last name: ")
 
-    greet (lname, fname)
+    greet(lname, fname)
 
 def email():
     email = input("Enter your e-mail address: ")
