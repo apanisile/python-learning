@@ -45,6 +45,8 @@ if bank_credit >= bench_mark :
     3. Transfer""")
     
     if payment_method == 1:
+        
+        bank_name = input("Enter bank name: ")
 
         routing_no = input("Enter your routing number: ")
         routing_no1 = input("Enter your routing number again: ")
