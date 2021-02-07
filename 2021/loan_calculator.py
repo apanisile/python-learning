@@ -19,11 +19,6 @@ def validate_numbers(x, y):
     else: 
         print("Accepted")
         
-def validate_email(x, y):
-    
-    if email != email1:
-        print("The email's dont match")
-    exit(1)
         
 def name():
     fname = input("Hi there! Please enter your first name: ")
@@ -34,17 +29,19 @@ def name():
 def email():
     email = input("Enter your e-mail address: ")
     email1 = input("Enter your e-mail address again: ")
+    
+    def validate_email(x, y):
+        if email != email1:
+            print("The email's dont match")
+            exit(1)
+    
     validate_email(email, email1)
 
-name()
-email()
-bank_credit = int(input("Please what is your bank credit score? "))
-
-bench_mark = 10000
-
-if bank_credit >= bench_mark :
+def payment():
+    
     print("Great! you qualify for a loan! ")
     print("What payment method would you prefer: ")
+    
     payment_method= int(input("""
     1. Direct Deposit
     2. Wire Check
@@ -74,6 +71,16 @@ if bank_credit >= bench_mark :
         print("There is no option like that")
         exit(1)
         
+        
+name()
+email()
+
+bank_credit = int(input("Please what is your bank credit score? "))
+
+bench_mark = 10000
+
+if bank_credit >= bench_mark :
+    payment()
 else:
     print(f"Sorry {lname} {fname}! You do not qualify for our bank loan")
     
