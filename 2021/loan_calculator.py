@@ -11,13 +11,13 @@ def greet(fname, lname, msg="Good morning!"):
     """
     print("Hello", fname + ' '+ lname + ', ' + msg)
     
-def routing(x, y):
+def valid(x, y):
     
     if x != y:
-        print("the routing numbers are not the same")
+        print("the numbers are not the same")
         exit(1)
     else: 
-        print("Welcome")
+        print("Accepted")
         
         
 fname = input("Hi there! Please enter your first name: ")
@@ -48,7 +48,11 @@ if bank_credit >= bench_mark :
 
         routing_no = input("Enter your routing number: ")
         routing_no1 = input("Enter your routing number again: ")
-        routing(routing_no, routing_no1)
+        valid(routing_no, routing_no1)
+        
+        acct_no = input("Enter your account number: ")
+        acct_no1 = input("Enter your account number again: ")
+        valid(acct_no, acct_no1)
         
 else:
     print(f"Sorry {lname} {fname}! You do not qualify for our bank loan")
