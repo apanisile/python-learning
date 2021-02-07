@@ -31,12 +31,13 @@ def name():
 
     greet (lname, fname)
 
+def email():
+    email = input("Enter your e-mail address: ")
+    email1 = input("Enter your e-mail address again: ")
+    validate_email(email, email1)
+
 name()
-
-email = input("Enter your e-mail address: ")
-email1 = input("Enter your e-mail address again: ")
-validate_email(email, email1)
-
+email()
 bank_credit = int(input("Please what is your bank credit score? "))
 
 bench_mark = 10000
