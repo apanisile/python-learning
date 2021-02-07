@@ -29,8 +29,13 @@ bank_credit = int(input("Please what is your bank credit score? "))
 bench_mark = 10000
 
 if bank_credit >= bench_mark :
-    print("""Great! you qualify for a $5000 loan! How would you want to collect your loan?""")
-    loan = input("Great! How much would you like to loan?: ")
+    print("Great! you qualify for a loan! ")
+    print("What payment method would you prefer: ")
+    payment_method= input("""
+    1. Direct Deposit
+    2. Wire Check
+    3. Transfer""")
+
     
     
 else:
