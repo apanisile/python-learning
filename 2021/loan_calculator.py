@@ -42,7 +42,7 @@ if bank_credit >= bench_mark :
     payment_method= input("""
     1. Direct Deposit
     2. Wire Check
-    3. Transfer""")
+    3. Transfer """)
     
     if payment_method == 1:
         
@@ -55,6 +55,16 @@ if bank_credit >= bench_mark :
         acct_no = input("Enter your account number: ")
         acct_no1 = input("Enter your account number again: ")
         valid(acct_no, acct_no1)
+        
+    elif payment_method == 2:
+        print("You hae chosen the Wire Check option")
+        account_name = input("What name shoudl be written on the check?: ")
+        
+    elif payment_method == 3:
+        print("You have chosen the transfer option!")
+    else:
+        print("There is no option like that")
+        exit(1)
         
 else:
     print(f"Sorry {lname} {fname}! You do not qualify for our bank loan")
