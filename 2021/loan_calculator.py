@@ -45,7 +45,8 @@ def payment():
     payment_method= int(input("""
     1. Direct Deposit
     2. Wire Check
-    3. Transfer """))
+    3. Transfer 
+    > """))
     
     if payment_method == 1:
         
@@ -62,7 +63,7 @@ def payment():
         validate_numbers(acct_no, acct_no1)
         
     elif payment_method == 2:
-        print("You hae chosen the Wire Check option")
+        print("You have chosen the Wire Check option")
         account_name = input("What name should be written on the check?: ")
         
     elif payment_method == 3:
