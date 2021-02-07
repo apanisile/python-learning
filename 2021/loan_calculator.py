@@ -25,11 +25,13 @@ def validate_email(x, y):
         print("The email's dont match")
     exit(1)
         
-        
-fname = input("Hi there! Please enter your first name: ")
-lname = input("Please enter your last name: ")
+def name():
+    fname = input("Hi there! Please enter your first name: ")
+    lname = input("Please enter your last name: ")
 
-greet (lname, fname)
+    greet (lname, fname)
+
+name()
 
 email = input("Enter your e-mail address: ")
 email1 = input("Enter your e-mail address again: ")
