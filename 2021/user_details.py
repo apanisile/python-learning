@@ -12,6 +12,12 @@ def greet(fname, lname, msg="Good morning!"):
     """
     print("Hello", fname + ' '+ lname + ', ' + msg)
     
+def name():
+    fname = input("Hi there! Please enter your first name: ")
+    lname = input("Please enter your last name: ")
+
+    greet(lname, fname)
+    
 def validate_numbers(x, y):
     
     if x != y:
@@ -21,11 +27,7 @@ def validate_numbers(x, y):
         print("Accepted")
         
         
-def name():
-    fname = input("Hi there! Please enter your first name: ")
-    lname = input("Please enter your last name: ")
 
-    greet(lname, fname)
 
 def email():
     email = input("Enter your e-mail address: ")
