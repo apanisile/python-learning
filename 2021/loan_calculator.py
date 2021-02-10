@@ -11,16 +11,18 @@ if (prompt_user == "Y") | (prompt_user == "y") | (prompt_user == "yes") | (promp
     user.name()
     user.email()
 
-    bank_credit = int(input("Please what is your bank credit score? "))
+    print("Your credit core should be more than $500 to qualify for our loan")
+    bank_credit = int(input("Please what is your bank credit score: "))
 
-    bench_mark = 10000
+    bench_mark = 500
 
-    while bench_mark > 0:
-        if bank_credit >= bench_mark:
-            user.payment()
-            print("Your account would be credited in the next 2-5 working days")
-        else:
-            print(f"Sorry! You do not qualify for our bank loan")
+    if bank_credit >= bench_mark:
+        user.payment()
+        print("Your account would be credited in the next 2-5 working days")
+
+    else:
+        print(f"Sorry! You do not qualify for our bank loan")
+        exit(1)
 
 else:
     print("Bye!")
