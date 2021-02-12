@@ -1,5 +1,6 @@
-    #Module containing all the functions to be used
-class loan_function():
+# Module containing all the functions to be used
+class loan_function:
+
     def greet(fname, lname, msg="Good morning!"):
         """
         This function greets to
